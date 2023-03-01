@@ -20,3 +20,13 @@ jobs:
           image, logs = client.images.build(path='.', tag='my-docker-image')
           for line in logs:
             print(line)
+
+      - name: Push Docker image
+        run: |
+          pip install docker
+          import docker
+          
+          client = docker.from_env()
+          client.login(username='${{ secrets.DOCKER_USERNAME }}', password='${{ secrets.DOCKER_PASSWORD }}')
+          for line in client.images.push('my-docker-image', stream=True):
+            print(line)
