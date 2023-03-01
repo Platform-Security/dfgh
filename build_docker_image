@@ -1,0 +1,19 @@
+import docker
+import os
+
+client = docker.from_env()
+
+repo_path = os.getenv("GITHUB_WORKSPACE")
+image_name = "my-docker-image"
+
+image, build_log = client.images.build(
+    path='C:\Users\soc\Documents\GitHub',
+    dockerfile=os.path.join(repo_path, "Dockerfile"),
+    tag=image_name,
+    rm=True,
+)
+
+for line in build_log:
+    print(line)
+
+print("Built image with ID:", image.id)
