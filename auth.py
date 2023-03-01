@@ -1,0 +1,2 @@
+bitbucket_access_token = 'ATATT3xFfGF0r572Z6oM1NmvcdNaJJWDuFxcbeGt7atS_6Q2AGR0xN76QLNEg4C035iJ9duUSBtfv1n1f66HN4kRkmR6FwBCx9YfxN_XxUibtUUnTmnQBup-IR7Gz4_mE-MY4xrE6h_ZONnPlLmvlxc5aEiHrLbRSd2PGOmy-ptwWybvxkMEWQM=449AC47C'
+sourceforage_access_token="21fedc29-47e8-43c6-8d52-9dc4bf223ca0"
