@@ -20,7 +20,7 @@ class github:
         response = requests.get(url, headers=head)
         #Need to extract time data and save it to a smaller, organized json object
         print(url)
-        return response
+        return "I got It"
 
 
 #***************************************************************************************************************
